@@ -1,12 +1,15 @@
-import { SecondClass } from './aulas/SecondClass'
+import { FourthClass } from './lessons/fourthClass'
+import { SecondClass } from './lessons/SecondClass'
+import { ThirdClass } from './lessons/ThirdClass'
 import { Login } from './pages/Login'
 
 
 function App() {
 
   return (
-    //<Login></Login>
-    <SecondClass></SecondClass> //importar diretamente no App
+    
+    <FourthClass />
+    
   )
 }
 
