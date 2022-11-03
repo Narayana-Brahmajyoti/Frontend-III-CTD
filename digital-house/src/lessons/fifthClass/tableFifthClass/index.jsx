@@ -1,7 +1,6 @@
 import './style.scss'
-import testeImage from './../../assets/images/teste.jfif'
-import batataGif from './../../assets/images/batata.gif'
-import { FifthClassItem } from '../../components/FifthClassItem'
+// import testeImage from './../../../assets/images/teste.jtif'
+// import batataGif from './../../../assets/images/batata.gif'
 import { TableFifthClassItem } from '../../../components/FifthClassItem/TableFifthClassItem'
 
 export function TableFifthClass(){

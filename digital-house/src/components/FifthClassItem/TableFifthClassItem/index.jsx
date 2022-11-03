@@ -1,4 +1,3 @@
-import './style.scss'
 
 export function TableFifthClassItem(props){
 
