@@ -1,0 +1,146 @@
+.banner-section{
+
+    // position: absolute;
+    // width: 1728px;
+    // height: 803px;
+    // left: 0px;
+    // top: 120px;
+    
+
+    .banner-section-caixa{
+
+        .banner-section-background{
+
+            margin-top: 10rem;
+        }
+
+        .banner-section-icone1{
+                
+            position: absolute;
+            width: 30rem;
+            height: 30rem;
+            left: 100.18rem;
+            top: 15.7rem;
+            z-index: 2;
+            
+
+            transform: matrix(1, 0.03, 0.03, 1, 0, 0);
+        }
+    
+        .banner-section-glassmorphism{
+            position: absolute;
+            width: 602px;
+            height: 505px;
+            left: 563px;
+            top: 210px;
+            z-index: 1;
+
+            background: rgba(12, 12, 12, 0.6);
+            backdrop-filter: blur(6px);
+            /* Note: backdrop-filter has minimal browser support */
+
+            border-radius: 12px;
+
+            .banner-section-title{
+
+                position: absolute;
+                width: 49.2rem;
+                height: 7.5rem;
+                left: 5.8rem;
+                top: 12.6rem;
+                
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 900;
+                font-size: 8rem;
+                line-height: 7.5rem;
+                
+                /* identical to box height, or 94% */
+                
+                text-align: center;
+                
+                z-index: 20;
+                
+                color: var(--text-color1);
+
+                text-shadow: 0rem 0.4rem 4rem var(--primary);
+                 
+            }
+
+            .banner-section-subtitulo{
+
+                position: absolute;
+                width: 44.2rem;
+                height: 3.6rem;
+                left: 8.2rem;
+                top: 22rem;
+
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 900;
+                font-size: 46px;
+                line-height: 36px;
+                /* identical to box height, or 78% */
+
+                text-align: center;
+                color: var(--terciary);
+
+                
+                text-shadow: 0rem 0.4rem 4rem var(--primary);
+                 
+            }
+
+            .banner-section-text1{
+                position: absolute;
+                width: 49.2rem;
+                height: 3.6rem;
+                left: 5rem;
+                top: 31rem;
+
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 2.2rem;
+                line-height: 3.6rem;
+                /* identical to box height, or 164% */
+
+                text-align: center;
+
+                color: var( --text-color4);
+            }
+
+            .banner-section-text2{
+
+                position: absolute;
+                width: 49.2rem;
+                height: 2.6rem;
+                left: 5rem;
+                top: 36.5rem;
+
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 1.8rem;
+                line-height: 2.6rem;
+                /* identical to box height, or 164% */
+
+                text-align: center;
+
+                color: var( --text-color4);
+            }
+
+    
+        }
+
+        .banner-section-icone2{
+            position: absolute;
+            width: 20rem;
+            height: 20rem;
+            left: 49.20rem;
+            top: 56.5rem;
+            z-index: 2;
+            
+            transform: rotate(4.61deg);
+        }
+    }
+}

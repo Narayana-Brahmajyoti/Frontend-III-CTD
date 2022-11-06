@@ -5,28 +5,28 @@ export function SectionHeader(){
     return(
         <header className='header'>
             <div className='header-navbar-logo'>
-                <h1><span className='header-navbar-logo-detalhe'>DH</span><span className='header-navbar-logo-text'>Games</span></h1>
+                <h1 className='header-h1'><span className='header-navbar-logo-detalhe'>DH</span><span className='header-navbar-logo-text'>GAMES</span></h1>
             </div>
             <div className='header-navbar-menu'>
 
-                <ul>
-                    <li>
-                        <a href="#" >STORE</a>
+                <ul className='header-ul'>
+                    <li className='header-li-store'>
+                        <a className='header-a-store' href="#" >STORE</a>
                     </li>
 
-                    <li>
+                    <li className='library'>
                         <a href="#" >LIBRARY</a>
                     </li>
 
-                    <li>
+                    <li className='community'>
                         <a href="#" >COMMUNITY</a>
                     </li>
 
-                    <li>
+                    <li className='about'>
                         <a href="#">ABOUT</a>
                     </li>
 
-                    <li>
+                    <li className='profile'>
                         <a href="#">PROFILE</a>
                     </li>
                 </ul>

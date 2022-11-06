@@ -1,20 +1,20 @@
 .games-section-vertical-item-component {
 
-    background-color: #151515;
-    height: 167px;
+    background-color: var(--secondary);
+    height: 16.7rem;
     display: flex;
-    border-radius: 12px;
+    border-radius: 1.2rem;
     overflow: hidden;
 
     &.item-card {
 
-        width: 300px;
+        width: 30rem;
 
     }
 
     .game-picture {
 
-        width: 292px;
+        width: 29.2rem;
         object-fit: cover;
 
     }
@@ -24,11 +24,11 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 24px;
+        padding: 2.4rem;
 
         .name {
 
-            font-size: 24px;
+            font-size: 2.4rem;
 
         }
 
