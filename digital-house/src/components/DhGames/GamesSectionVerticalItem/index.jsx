@@ -1,4 +1,7 @@
 import './style.scss';
+import mac from '../../../assets/imgDHGames/mac.png'
+import windows from '../../../assets/imgDHGames/windows.png'
+
 
 export function GamesSectionVerticalItem(props){
 
@@ -10,7 +13,7 @@ export function GamesSectionVerticalItem(props){
             
             <div className='infos'>
                 <h1 className='name'>{props.game.name}</h1>
-                <span className='plataforms'>{props.game.plataforms[0]}</span>
+                <img className='plataforms'src={props.game.plataforms[0] === 'windows' ?  windows :  mac}/>
                 <span className='categories'>
                     {
                         props.game.categories.map(
@@ -24,7 +27,7 @@ export function GamesSectionVerticalItem(props){
                 </span>  
             </div>
             
-            <span>{props.game.price}</span>
+            <span className='price'>{props.game.price}</span>
         </div>
     )
 }

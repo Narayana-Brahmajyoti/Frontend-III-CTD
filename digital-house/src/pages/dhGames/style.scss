@@ -4,10 +4,13 @@
     --primary: #000000;
     --secondary: #202020;
     --terciary: #FF7A00;
+    // --text-color0: #FFFFFF;
     --text-color1: rgba(0, 0, 0, 0.25)
     --text-color2: hsl(0, 0%, 20%);
     --text-color3: rgba(255, 255, 255, 0.6);
     --text-color4: rgba(255, 255, 255, 0.8);
+    --text-color5: rgba(255, 255, 255, 0.2);
+
     --error: #FF3838;
     font-size: 62.5%;
 }
@@ -15,32 +18,37 @@
 
 
 .dh-games-component {
+    width: 100%;
     background-color: var(--primary);
+    position: absolute;
 
     .dh-games-main-content {
 
         width: 100%;
-        max-width: 1200px;
+        max-width: 120rem;
         margin: 0 auto;
 
         
 
         .games-section {
 
-            font-size: 36px;
-            opacity: .8;
+            font-size: 3.6rem;
+            
 
             .games-section-title {
 
-                margin-bottom: 24px;
+                margin: 5rem 0 2.4rem 0;
+                color: var(--text-color4);
 
+                // text-shadow: 0rem 0.4rem 0.4rem var(--primary);
+         
             }
 
             .games {
 
                 display: flex;
                 flex-direction: column;
-                gap: 24px;
+                gap: 2.4rem;
 
             }
 

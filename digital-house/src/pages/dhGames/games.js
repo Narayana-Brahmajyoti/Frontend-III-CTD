@@ -9,7 +9,7 @@ export const newGames = [
     {
         name: "Don't Starve",
         plataforms: ['windows'],
-        categories: ['SurvivalOpen', 'World Survival', 'CraftCrafting'],
+        categories: ['Survival Open', 'World Survival', 'CraftCrafting'],
         price: '30,00',
         picture: 'https://cdn.akamai.steamstatic.com/steam/apps/219740/header.jpg'
     },
