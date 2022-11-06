@@ -54,6 +54,34 @@
 
         }
 
+        .games-section-horizontal{
+            
+            font-size: 3.6rem;
+            position: relative;
+            display: flex;
+            flex-flow: row wrap;
+            
+
+            .games-section-title {
+
+                margin: 5rem 0 2.4rem 0;
+                color: var(--text-color4);
+
+                // text-shadow: 0rem 0.4rem 0.4rem var(--primary);
+         
+            }
+
+            .games {
+
+                display: flex;
+                flex-flow: row wrap;
+                gap: 2.4rem;
+
+            }
+
+
+        }
+
     }
 
 }

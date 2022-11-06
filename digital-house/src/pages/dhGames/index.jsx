@@ -38,7 +38,7 @@ export function DHGames(){
 
                 </section>
 
-                <section className='games-section'>
+                <section className='games-section-horizontal'>
 
                     <h1 className='games-section-title'>Halloween Offers</h1>
 
@@ -80,7 +80,7 @@ export function DHGames(){
 
                 </section>
 
-                <section className='games-section'>
+                <section className='games-section-horizontal'>
 
                     <h1 className='games-section-title'>Cheap Games</h1>
 
