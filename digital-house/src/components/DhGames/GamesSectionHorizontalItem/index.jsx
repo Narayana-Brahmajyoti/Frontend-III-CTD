@@ -24,8 +24,8 @@ export function GamesSectionHorizontalItem(props){
                 
             </div>
             
-            <span>{props.game.oldPrice}</span>
-            <span>{props.game.price}</span>
+            <span className='old-price'>{props.game.oldPrice}</span>
+            <span className='new-price'>{props.game.newPrice}</span>
 
         </div>
     )

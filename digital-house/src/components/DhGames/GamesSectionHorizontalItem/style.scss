@@ -1,0 +1,113 @@
+.games-section-horizontal-item-component {
+
+    // position: relative;
+    
+    // height: 42rem;
+    // width: 56.1rem;
+   display: flex;
+//    flex-flow: row wrap;
+   flex-wrap: wrap;
+    
+
+    &.item-card {
+
+        height: 40rem;
+        width: 56.1rem;
+        border-radius: 1.2rem;
+        background: var(--secondary);
+
+
+    }
+
+    .game-picture {
+        border-radius: 12px 12px 0px 0px;
+        width: 56.1rem;
+        // width: 29.2rem;
+        // object-fit: cover;
+        // border-radius: 1.2rem 0rem ;
+
+    }
+
+    .new-price{
+        position: relative;
+        // left: 81.46%;
+        left: 80%;
+        // top: 84.76%;
+        bottom: 25%;
+
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 3.2rem;
+        line-height: 4.8rem;
+        text-align: right;
+
+        color: var(--terciary);
+        
+    }
+
+    .old-price{
+        text-decoration: line-through;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        color: var(--text-color5);
+
+        width: 5rem;
+        height: 2.4rem;
+        margin-top: 0rem;
+        margin-left: 48.4rem;
+
+        position: relative;
+        right: -1%;
+        bottom: 25%;
+    }
+
+    .infos {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 2.4rem;
+
+        .name {
+
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 2.4rem;
+            line-height: 3.6rem;
+            color: var(--text-color1);
+            
+        }
+
+
+        .categories {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+            margin-top: 2rem;
+            
+            a:link {
+                text-decoration: none;
+                color: var(--text-color5);
+                margin: 0rem 1rem 0rem 0rem;
+                
+
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+
+        }
+
+    }
+
+    
+
+
+}
