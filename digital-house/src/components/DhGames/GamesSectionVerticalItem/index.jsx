@@ -13,7 +13,20 @@ export function GamesSectionVerticalItem(props){
             
             <div className='infos'>
                 <h1 className='name'>{props.game.name}</h1>
-                <img className='plataforms'src={props.game.plataforms[0] === 'windows' ?  windows :  mac}/>
+                <img className='plataforms'src=
+                    {
+                        props.game.plataforms.map( 
+                        
+                            plataform => {
+                                return(
+                                    plataform === 'windows' ?  windows : mac
+                                )
+                            }
+
+                        )
+                    }
+                
+                />
                 <span className='categories'>
                     {
                         props.game.categories.map(

@@ -8,7 +8,7 @@ export const newGames = [
     },
     {
         name: "Don't Starve",
-        plataforms: ['windows'],
+        plataforms: ['mac'],
         categories: ['Survival Open', 'World Survival', 'CraftCrafting'],
         price: '30,00',
         picture: 'https://cdn.akamai.steamstatic.com/steam/apps/219740/header.jpg'
@@ -56,7 +56,7 @@ export const halloweenGames = [
 export const earlyAccessGames = [
     {
         name: 'Stardew Valleyt',
-        plataforms: ['windows'],
+        plataforms: ['mac'],
         categories: ['Farming Sim', 'Life Sim', 'Pixel Graphics'],
         price: '20,00',
         picture: 'https://cdn.akamai.steamstatic.com/steam/apps/413150/header.jpg'
@@ -70,7 +70,7 @@ export const earlyAccessGames = [
     },
     {
         name: 'Bendy and the Ink Machine',
-        plataforms: ['windows'],
+        plataforms: ['mac'],
         categories: ['Horror', 'First-Person', 'Singleplayer', 'PuzzleDark'],
         price: '45,00',
         picture: 'https://cdn.akamai.steamstatic.com/steam/apps/622650/header.jpg'
