@@ -9,6 +9,10 @@
   color: white;
 }
 
+:root{
+  font-size: 62.5%;
+}
+
 body {
   background-color: #202020;
 }
