@@ -5,6 +5,7 @@ import { FourthClass } from './lessons/fourthClass'
 import { SecondClass } from './lessons/SecondClass'
 import { SeventhClass } from './lessons/SeventhClass'
 import { TableSeventhClass } from './lessons/TableSeventhClass'
+import { TableThirteenthClass } from './lessons/TableThirteenthClass'
 import { ThirdClass } from './lessons/ThirdClass'
 import { ThirteenthClass } from './lessons/ThirteenthClass'
 import { DHGames } from './pages/dhGames'
@@ -23,7 +24,8 @@ function App() {
     // <SeventhClass />
     // <TableSeventhClass />
     // <DHGames />
-    <ThirteenthClass />
+    // <ThirteenthClass />
+    <TableThirteenthClass />
     
   )
 }
