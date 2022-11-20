@@ -1,3 +1,4 @@
+import { FifteenthClass } from './lessons/FifteenthClass'
 import { FifthClass } from './lessons/fifthClass'
 import { TableFifthClass } from './lessons/fifthClass/tableFifthClass'
 
@@ -19,14 +20,16 @@ function App() {
     // <ThirdClass />
     // <FourthClass />
     // <FifthClass />
-    // < TableFifthClass/>
+    // <TableFifthClass/>
     // <Login />
     // <SeventhClass />
     // <TableSeventhClass />
     // <DHGames />
     // <ThirteenthClass />
-    <TableThirteenthClass />
-    
+    // <TableThirteenthClass />
+    <FifteenthClass />
+
+
   )
 }
 
