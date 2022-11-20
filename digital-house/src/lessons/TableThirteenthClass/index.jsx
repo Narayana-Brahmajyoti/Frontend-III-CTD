@@ -8,7 +8,7 @@ export function TableThirteenthClass() {
     const [pedido, setPedido] = useState('')
     
     const [formularioErro, setFormularioErro] = useState(false)
-    const [allPedidos, setAllPedidos] =useState(["A moda"])
+    const [allPedidos, setAllPedidos] = useState([])
     
     useEffect(
         () => {

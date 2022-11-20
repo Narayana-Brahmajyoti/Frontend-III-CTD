@@ -1,0 +1,59 @@
+.fourteenth-class-iten-component {
+
+    width: 100%;
+    max-width: 1000px;
+    margin: 32px auto;
+
+    main {
+
+        background-color: #303030;
+        padding: 42px;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+
+        h1 {
+
+            margin-bottom: 24px;
+
+        }
+
+        p {
+            margin: 32px auto;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        button {
+            
+            
+
+            &:hover {
+
+                box-shadow: 0 0 20px rgb(77, 200, 89);
+
+            }
+
+        }
+
+    }
+
+
+
+    button {
+
+        transition: .2s ease-in-out;
+        opacity: .4;
+
+        &:hover {
+
+            cursor: pointer;
+            opacity: 1;
+
+        }
+
+    }
+
+}
