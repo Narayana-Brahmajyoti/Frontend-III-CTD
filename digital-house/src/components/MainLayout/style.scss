@@ -1,0 +1,63 @@
+// .main-layout-component {
+
+//     .main-layout-component-header {
+
+//         background-color: #404040;
+//         padding: 42px;
+//         margin-bottom: 12px;
+
+//     }
+
+//     .main-layout-component-main {
+
+//         background-color: #505050;
+//         padding: 42px;
+
+//     }
+
+// }
+
+.main-layout-component {
+    display: flex;
+    height: 100vh;
+    .main-layout-component-header {
+        height: 100vh;
+        background-color: #404040;
+        padding: 42px;
+        margin-bottom: 12px;
+
+    }
+
+    .main-layout-component-main {
+        height: 100vh;
+        width: 100%;
+        background-color: #505050;
+        padding: 42px;
+
+    }
+
+}
+.navBar{
+    list-style: none;
+    
+    li {
+      margin: 5px;
+      padding: 5px;
+      background-color: aquamarine;
+      max-width: 200px;
+      text-align: center;
+      border-radius: 2px;
+     
+      
+       a {
+        text-decoration: none;
+        color: rgb(59, 58, 58);
+       }
+      
+    }
+    li:hover{
+        background-color: #505050;
+      }
+
+}
+

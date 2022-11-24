@@ -1,5 +1,5 @@
-import { useEffect } from 'react'
 import { useState } from 'react'
+import { useParams } from 'react-router-dom'
 import { FifteenthClassIten } from '../../components/FifteenthClassIten'
 
 import './style.scss'
@@ -10,6 +10,8 @@ export function FifteenthClass() {
     const [cep, setCep] = useState('')
     const [erroForm, setErroForm] = useState(false)
 
+    // const { id } = useParams()
+    // console.log(id)
 
     function searchCep(cepRecieved) {
         event.preventDefault()
