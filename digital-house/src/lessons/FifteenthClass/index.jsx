@@ -13,23 +13,23 @@ export function FifteenthClass() {
     // const { id } = useParams()
     // console.log(id)
 
-    function searchCep(cepRecieved) {
+    function searchCep(event) {
         event.preventDefault()
 
-        setCep(cepRecieved)
 
-        if(cepRecieved.length === 8) {
 
-            fetch(`https://viacep.com.br/ws/${cepRecieved}/json/`).then(
+        if (cep.length === 8) {
+
+            fetch(`https://viacep.com.br/ws/${cep}/json/`).then(
                 response => {
                     response.json().then(
                         address => {
 
-                            if(address.erro !== undefined) {
+                            if (address.erro !== undefined) {
 
                                 // Deu erro
                                 setErroForm(true)
-                            
+                                
 
                             } else {
 
@@ -44,6 +44,9 @@ export function FifteenthClass() {
             )
 
         }
+        else {
+            setErroForm(true)
+        }
     }
 
 
@@ -53,7 +56,7 @@ export function FifteenthClass() {
 
         locations.map(
             (location) => {
-                if(location.cep === currentLocation.cep) {
+                if (location.cep === currentLocation.cep) {
                     setLocations(
                         locations.filter(
                             (currentLocation) => location.cep != currentLocation.cep
@@ -63,10 +66,10 @@ export function FifteenthClass() {
             }
         )
 
-        
+
     }
 
-    return(
+    return (
 
         <div className="fifteenth-class-iten-component">
 
@@ -79,7 +82,7 @@ export function FifteenthClass() {
                     <input
                         id="cep"
                         type="number"
-                        // value={cep}
+                        value={cep}
                         onChange={event => setCep(event.target.value)}
                     />
                     {
@@ -87,7 +90,7 @@ export function FifteenthClass() {
                     }
                 </div>
 
-                <button value={cep} onClick={ event => searchCep(event.target.value)}>Cadastrar</button> 
+                <button aria-label='submit-button' onClick={event => searchCep(event)}>Cadastrar</button>
 
             </form>
 
@@ -99,9 +102,9 @@ export function FifteenthClass() {
                             <FifteenthClassIten
                                 key={index}
                                 data={location}
-                                onDeleteLocation={ currentLocation => deleteLocation(currentLocation)}
+                                onDeleteLocation={currentLocation => deleteLocation(currentLocation)}
                             />
-                        )  
+                        )
                     )
                 }
 

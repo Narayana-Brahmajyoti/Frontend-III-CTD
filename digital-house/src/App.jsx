@@ -17,7 +17,6 @@ import { ThirdClass } from './lessons/ThirdClass'
 import { ThirteenthClass } from './lessons/ThirteenthClass'
 import { DHGames } from './pages/dhGames'
 import { Login } from './pages/Login'
-import { FourteenthClassIten } from "./components/FourteenthClassIten";
 import { InstagramTimeLine } from "./challenges/InstagramTimeLine";
 import { ToDo } from "./pages/ToDo";
 

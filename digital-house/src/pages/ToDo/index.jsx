@@ -202,7 +202,7 @@ export function ToDo() {
 
                 <h1>Tarefas criadas</h1>
 
-                <section>
+                <section className='section-to-do'>
 
                     {
 

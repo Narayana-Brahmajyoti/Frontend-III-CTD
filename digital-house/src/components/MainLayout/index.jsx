@@ -6,100 +6,103 @@ import './style.scss'
 export function MainLayout(){
 
     return (
-        <div className="main-layout-component">
+        <body >
+            <main className='main-layout-component'>
+                <section>
+                    <header className='main-layout-component-header'>
 
-            <header className='main-layout-component-header'>
+                        <h1>Layout Principal</h1>
 
-                <h1>Layout Principal</h1>
+                        <ul className='navBar'>
 
-                <ul className='navBar'>
+                            <li>
 
-                    <li>
+                                <Link to="segunda-aula">Segunda Aula</Link>
 
-                        <Link to="segunda-aula">Segunda Aula</Link>
+                            </li>
 
-                    </li>
+                            <li>
 
-                    <li>
+                                <Link to="terceira-aula">Terceira Aula</Link>
 
-                        <Link to="terceira-aula">Terceira Aula</Link>
+                            </li>
+                            <li>
 
-                    </li>
-                    <li>
+                                <Link to="quarta-aula">Quarta Aula</Link>
 
-                        <Link to="quarta-aula">Quarta Aula</Link>
+                            </li>
 
-                    </li>
+                            <li>
 
-                    <li>
+                                <Link to="quinta-aula">Quinta Aula</Link>
 
-                        <Link to="quinta-aula">Quinta Aula</Link>
+                            </li>
+                            <li>
 
-                    </li>
-                    <li>
+                                <Link to="mesa-quinta-aula">Mesa Quinta Aula</Link>
 
-                        <Link to="mesa-quinta-aula">N Aula</Link>
+                            </li>
+                            <li>
 
-                    </li>
-                    <li>
+                                <Link to="setima-aula">Sétima Aula</Link>
 
-                        <Link to="setima-aula">Sétima Aula</Link>
+                            </li>
 
-                    </li>
+                            <li>
 
-                    <li>
+                                <Link to="mesa-setima-aula">Mesa Sétima Aula</Link>
 
-                        <Link to="mesa-setima-aula">Mesa Sétima Aula</Link>
+                            </li>
+                            <li>
 
-                    </li>
-                    <li>
+                                <Link to="decima-terceira-aula">Decima Terceira Aula</Link>
 
-                        <Link to="decima-terceira-aula">Decima Terceira Aula</Link>
+                            </li>
+                            <li>
 
-                    </li>
-                    <li>
+                                <Link to="mesa-decima-terceira-aula">Mesa Decima terceira Aula</Link>
 
-                        <Link to="mesa-decima-terceira-aula">Mesa Decima Quinta Aula</Link>
+                            </li>
+                            <li>
 
-                    </li>
-                    <li>
+                                <Link to="decima-quarta-aula">Decima Quarta Aula</Link>
 
-                        <Link to="decima-quarta-aula">Decima Quarta Aula</Link>
+                            </li>
+                            <li>
 
-                    </li>
-                    <li>
+                                <Link to="decima-quinta-aula">Decima Quinta Aula</Link>
 
-                        <Link to="decima-quinta-aula">Decima Quinta Aula</Link>
+                            </li>
+                            <li>
 
-                    </li>
-                    <li>
+                                <Link to="checkpoint-I">DHGames</Link>
 
-                        <Link to="checkpoint-I">Checkpoint I</Link>
+                            </li>
+                            <li>
 
-                    </li>
-                    <li>
+                                <Link to="challenges">Instagram TimeLine</Link>
 
-                        <Link to="challenges">Instagram TimeLine</Link>
+                            </li>
+                            <li>
 
-                    </li>
-                    <li>
+                                <Link to="to-do">ToDo</Link>
 
-                        <Link to="to-do">ToDo</Link>
+                            </li>
 
-                    </li>
+                        </ul>
 
-                </ul>
+                    </header>
 
-            </header>
+                    <div className='main-layout-component-main'>
 
-            <main className='main-layout-component-main'>
+                        <p>O conteúdo será carregado aqui dentro:</p>
 
-                <p>O conteúdo será carregado aqui dentro:</p>
+                        <Outlet />
 
-                <Outlet />
-
+                    </div>
+                </section>
             </main>
 
-        </div>
+        </body>
     )
 }

@@ -1,63 +1,103 @@
-// .main-layout-component {
-
-//     .main-layout-component-header {
-
-//         background-color: #404040;
-//         padding: 42px;
-//         margin-bottom: 12px;
-
-//     }
-
-//     .main-layout-component-main {
-
-//         background-color: #505050;
-//         padding: 42px;
-
-//     }
-
-// }
-
-.main-layout-component {
-    display: flex;
-    height: 100vh;
-    .main-layout-component-header {
-        height: 100vh;
-        background-color: #404040;
-        padding: 42px;
-        margin-bottom: 12px;
-
-    }
-
-    .main-layout-component-main {
-        height: 100vh;
-        width: 100%;
-        background-color: #505050;
-        padding: 42px;
-
-    }
-
-}
-.navBar{
-    list-style: none;
+body {
     
-    li {
-      margin: 5px;
-      padding: 5px;
-      background-color: aquamarine;
-      max-width: 200px;
-      text-align: center;
-      border-radius: 2px;
-     
-      
-       a {
-        text-decoration: none;
-        color: rgb(59, 58, 58);
-       }
-      
-    }
-    li:hover{
-        background-color: #505050;
-      }
+    
+    &::after {
 
+        background-image: url(../src/assets/images/star12.png),
+        linear-gradient(to top, black, var(--color-pink), rgb(195, 26, 166), black, var(--color-gray) 90%);
+        // linear-gradient(to top, #290923, #57134A, #8C1F78, #9F20BA, #6F1EB0, #271D99);;
+        background-repeat: no-repeat;
+        background-size: cover;
+        content: "";
+        height: 200%;
+        left: 0;
+        pointer-events: none;
+        position: absolute ;
+        top: 0;
+        width: 105%;
+        z-index: -1;
+    }
+  
+
+    .main-layout-component {
+
+        
+        &::before{
+            margin: 0;
+            background: url(../../assets/images/montanha.png); 
+                    // background-repeat: no-repeat;
+                    // background-color: #505050;
+            // background-attachment: fixed;
+            content: "";
+            position: fixed;
+            bottom: 0;
+            left: -1rem;
+            content: '';
+            height: 50rem;
+            pointer-events: none;
+            // position: absolute;
+            width: 105%;
+            z-index: 1;
+        }   
+        section{
+            
+            
+            display: flex;
+            height: 100vh;
+            
+        }
+
+
+        .main-layout-component-header {
+            height: 100vh;
+            padding: 42px;
+            margin-bottom: 12px;
+            z-index: 2;
+        }
+
+        .main-layout-component-main {
+            height: 100vh;
+            width: 100%;
+            padding: 42px;
+            z-index: 2;
+            p{
+                text-align: center;
+            }
+            
+        }
+
+        
+
+    }
+
+    .navBar{
+        list-style: none;
+        
+        li {
+        margin: 5px;
+        padding: 5px;
+        background-color: aquamarine;
+        max-width: 200px;
+        text-align: center;
+        border-radius: 2px;
+        
+        
+        a {
+            text-decoration: none;
+            color: rgb(59, 58, 58);
+        }
+        
+        }
+        li:hover{
+            background-color: #505050;
+            a{
+                color: white;
+
+            }
+        }
+
+    }
 }
+
+
 
