@@ -5,21 +5,23 @@ import {
 import { MainLayout } from "./components/MainLayout";
 
 import { FifteenthClass } from './lessons/FifteenthClass'
-import { FifthClass } from './lessons/fifthClass'
+import { FifthClass } from './lessons/FifthClass'
 import { TableFifthClass } from './lessons/TableFifthClass'
 import { FourteenthClass } from './lessons/FourteenthClass'
-import { FourthClass } from './lessons/fourthClass'
+import { FourthClass } from './lessons/FourthClass'
 import { SecondClass } from './lessons/SecondClass'
 import { SeventhClass } from './lessons/SeventhClass'
 import { TableSeventhClass } from './lessons/TableSeventhClass'
 import { TableThirteenthClass } from './lessons/TableThirteenthClass'
 import { ThirdClass } from './lessons/ThirdClass'
 import { ThirteenthClass } from './lessons/ThirteenthClass'
-import { DHGames } from './pages/dhGames'
+import { DHGames } from './pages/DHGames'
 import { Login } from './pages/Login'
 import { InstagramTimeLine } from "./challenges/InstagramTimeLine";
 import { ToDo } from "./pages/ToDo";
 
+import { ThemeProvider } from "./hooks/useTheme";
+import { Configurations } from "./pages/Configurations";
 
 function App() {
 
@@ -73,42 +75,37 @@ function App() {
           element: <FifteenthClass />
         },
         {
-          path: 'checkpoint-I',
-          element: <DHGames />
-        },
-        {
           path: 'challenges',
           element: <InstagramTimeLine />
         },
         {
           path: 'to-do',
           element: <ToDo />
-        }
+        },
+        {
+          path: 'login',
+          element: <Login />
+        },
+        {
+          path: 'configurations',
+          element: <Configurations />
+        },
       ]
     },
-    
-
-    
-  ]);
+    {
+      path: 'dh-games',
+      element: < DHGames />
+    }
+  ])
   
 
   return (
-    // <SecondClass />
-    // <ThirdClass />
-    // <FourthClass />
-    // <FifthClass />
-    // <TableFifthClass/>
-    // <Login />
-    // <SeventhClass />
-    // <TableSeventhClass />
-    // <DHGames />
-    // <ThirteenthClass />
-    // <TableThirteenthClass />
-    // <FourteenthClass/>
-    // <FifteenthClass />
-
-    <RouterProvider router={appRouter} />
-
+    
+    <ThemeProvider>
+      
+      <RouterProvider router={appRouter} />
+      
+    </ThemeProvider>
 
   )
 }

@@ -10,7 +10,7 @@ export function DHGames(){
 
     return (
 
-        <div className='dh-games-component'>
+        <body className='dh-games-component'>
 
             <SectionHeader />
             <SectionBanner />
@@ -104,6 +104,6 @@ export function DHGames(){
 
             </main>
 
-        </div>
+        </body>
     )
 }

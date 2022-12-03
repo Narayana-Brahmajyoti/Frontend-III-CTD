@@ -1,8 +1,9 @@
 .games-section-vertical-item-component {
 
     background-color: var(--secondary);
-    height: 16.7rem;
+    height: 100%;
     display: flex;
+    flex-direction: row;
     border-radius: 1.2rem;
     overflow: hidden;
     width: 100%;
@@ -17,14 +18,23 @@
 
         width: 29.2rem;
         object-fit: cover;
-        border-radius: 1.2rem 0rem ;
+        border-radius: 1.2rem 0 0 1.2rem;
 
     }
 
     .price{
-        position: absolute;
-        margin-top: 6rem;
-        left: 80%;
+        // display: flex;
+        // flex-direction: column;
+
+        width: 100%;
+        align-self: baseline;
+        margin-top: 6%;
+        margin: 10rem;
+        text-align: right;
+
+        // position: absolute;
+        // margin-top: 6rem;
+        // left: 80%;
         
         // left: 3rem;
         // right:3rem;
