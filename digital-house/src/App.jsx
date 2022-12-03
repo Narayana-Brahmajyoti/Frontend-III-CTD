@@ -101,10 +101,10 @@ function App() {
 
   return (
     
-    <ThemeProvider>
-      
-      <RouterProvider router={appRouter} />
-      
+    <ThemeProvider>    
+      {/* <LanguageProvider>   */}
+        <RouterProvider router={appRouter} />
+      {/* </LanguageProvider>       */}
     </ThemeProvider>
 
   )

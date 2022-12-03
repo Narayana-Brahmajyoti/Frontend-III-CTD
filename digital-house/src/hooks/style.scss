@@ -1,0 +1,165 @@
+body {
+    
+    
+    &::after {
+
+        animation: is-panning 20s ease-in-out infinite alternate;
+        background-image: 
+        // url(../src/assets/images/star12.png),
+        // linear-gradient(to top, black, var(--color-pink), rgb(195, 26, 166), black, var(--color-gray) 90%);
+        linear-gradient(to top, #290923, #57134A, #8C1F78, #9F20BA, #6F1EB0, #271D99,#331963);
+        background-repeat: no-repeat;
+        background-size: cover;
+        content: "";
+        height: 100vh;
+        left: 0;
+        pointer-events: none;
+        position: fixed ;
+        top: 0;
+        width: 108%;
+        z-index: -1;
+        object-fit: cover;
+        object-position: bottom;
+
+    }
+  
+
+    .main-layout-component {
+
+
+        .title {
+            align-items: center;
+            display: flex;
+            height: 3vh;
+            flex-direction: column;
+            justify-content: center;
+            font-size: 5rem;
+        }
+        
+        &::before{
+            margin: 0;
+            // background: url(../../assets/images/montanha.png); 
+                    // background-repeat: no-repeat;
+                    // background-color: #505050;
+            // background-attachment: fixed;
+            content: "";
+            position: fixed;
+            bottom: -280px;
+            left: 0;
+            height: 100%;
+            pointer-events: none;
+            // position: absolute;
+            width: 100%;
+            z-index: 1;
+            object-fit: cover;
+            object-position: bottom;
+        }   
+        section{
+            
+            
+            display: flex;
+            height: 100%;
+            
+        }
+
+
+        .main-layout-component-header {
+            height: 100vh;
+            padding: 42px;
+            margin-bottom: 12px;
+            z-index: 2;
+
+            h1{
+                font-size: 4rem;
+            
+            }
+        }
+
+        .main-layout-component-main {
+            height: 100vh;
+            width: 100%;
+            padding: 42px;
+            z-index: 2;
+            p{
+                text-align: center;
+            }
+            
+        }
+
+        
+
+    }
+
+    .navBar{
+        list-style: none;
+        
+        li {
+            margin: 5px;
+            // border: aqua solid 0.9rem;
+            background-color: aqua;
+            border: none;
+            cursor: pointer;
+            max-width: 250px;
+            text-align: center;
+            border-radius: 2px;
+            position: relative;
+            padding: 0.5rem;
+            
+            
+            a {
+                text-decoration: none;
+                color:  rgb(59, 58, 58);
+            }
+
+            &::before {
+                border: aqua solid 0.9rem;
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+            }
+        
+            &:hover, 
+            &:focus{
+                
+                box-shadow: 0 0 30px rgb(77, 175, 200);
+
+                a{
+                    color: white;
+                }
+            }
+            
+        }
+
+
+    }
+
+}
+
+@keyframes is-panning {
+    to {
+        transform: translateX(-5rem);
+    }
+}
+
+@keyframes has-shown{
+    from {
+        opacity: 0;
+        transform: translateY(5rem);
+    }
+
+    to{
+        opacity: 1;
+        transform: none;
+    }
+
+    
+}
+
+.has-shown{
+    animation: has-shown 2s ease-in-out 1 normal forwards;
+    
+    
+
+}
+

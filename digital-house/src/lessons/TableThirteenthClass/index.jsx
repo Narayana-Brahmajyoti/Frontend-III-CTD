@@ -60,7 +60,7 @@ export function TableThirteenthClass() {
 
     return (
 
-        <main>
+        <main className='decima-terceira-aula-component'>
             <form className={formularioErro ? 'form-error' : ''} onSubmit={event => adicionarPedido(event)}>
 
                 <fieldset>

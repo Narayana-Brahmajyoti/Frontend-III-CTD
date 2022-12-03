@@ -1,24 +1,26 @@
-*{
-    font-size: 2rem;
-}
 
-main {
 
-    margin: 5rem;
+.decima-terceira-aula-component {
+    
 
     fieldset {
 
         border-radius: 2rem;
-        padding: 3rem;
+        padding: 0 3rem 3rem 3rem;
+        font-size: 2rem;
 
         legend{
 
             padding: 0.5rem;
+            font-size: 4rem;
         }
+
+        
     }
 
     span{
         margin: 2rem 0rem  0rem 5rem;
+        font-size: 2rem;
     }
 
     .pedidos{
@@ -29,17 +31,23 @@ main {
     .form-error{
 
         padding-top: 1rem;
-        color: red;
+       
 
         fieldset {
 
-            background: #221515; 
+            background-color: rgba(94, 40, 40, 0.911); 
             border: 1px solid #FF7070;
             border-radius: 2rem;
             margin: 1rem;
         }
 
         
+    }
+
+    button{
+        font-size: 2rem;
+        width: auto;
+        padding: 1rem;
     }
 
 }

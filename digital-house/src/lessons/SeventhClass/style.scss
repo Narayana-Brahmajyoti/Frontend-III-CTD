@@ -1,31 +1,30 @@
-.lightTheme {
-
-    background-color: rgb(118, 165, 236);
-
-}
-
-.setima-aula-component-contador{
+.setima-aula-component-contador {
         
     width: 100%;
     max-width: 40rem;
     margin: 50px auto;
-    margin-left: 7rem;
-    border: solid 1px white;
     font-size: 1.5rem;
-}
 
-h1 {
+    .lightTheme {
 
-    margin: 3rem 0rem 1rem 3rem;
+        background-color: rgb(118, 165, 236);
+        
+        border: solid 1px black;
+       }
 
-}
+    h1 {
 
-button {
-
-    color: white;
+        margin: 3rem 0rem 1rem 3rem;
     
-    padding: 4px;
-    margin: 3rem;
-    color: black;
-
+    }
+    
+    button {
+        
+        padding: 4px;
+        margin: 3rem;
+        color: black;
+    
+    }
 }
+
+

@@ -1,40 +1,47 @@
-.setima-aula-component {
+.setima-aula-component-table {
 
+    
     width: 100%;
     max-width: 1200px;
-    margin: 50px auto;
-    margin-left: 7rem;
     font-size: 1.5rem;
+    margin: 0 auto;
+    
 
     &>h1 {
 
         margin-bottom: 32px;
 
     }
-
-    &>button {
-
-        color: white;
-        
-        padding: 4px;
-        margin-right: 12px;
-
-    }
-
-    button{
-        color: black;
-        border-radius: 0.7rem;
-    }
     
+    button {
+        color: black;
+        font-size: 16px;
+        background-color: aqua;
+        padding: 12px 24px;
+        border: none;
+        transition: .2s ease-in-out;
+        width: auto;
+        // padding: 1rem;
+        border-radius: 0.7rem;
+
+        &:hover {
+            background-color: rgb(40, 133, 133);
+            filter: brightness(120%);
+            cursor: pointer;
+
+        }
+
+    }
 
     .form-error {
 
-        background-color: red;
+        background-color: rgba(80, 34, 34, 0.685);
 
     }
 
     form {
 
+        font-size: 2rem;
         input {
 
             color: black;
@@ -53,30 +60,12 @@
         justify-content: space-between;
         margin-bottom: 42px;
 
-        button {
-
-            font-size: 16px;
-            background-color: rgb(105, 194, 105);
-            padding: 12px 24px;
-            border: none;
-            border-radius: 4px;
-            transition: .2s ease-in-out;
-
-            &:hover {
-
-                filter: brightness(120%);
-                cursor: pointer;
-
-            }
-
-        }
-
     }
 
     .products {
 
         display: flex;
-        // justify-content: space-between;
+        justify-content: space-around;
         flex-wrap: wrap;
         gap: 42px;
         margin-top: 3rem;

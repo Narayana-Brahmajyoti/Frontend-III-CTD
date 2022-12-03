@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { createContext, useContext } from "react"
 
-// Criação do Contexto
+// Ciração do Contexto
 const ThemeContext = createContext()
 
 // Criação do Provedor para o Contexto

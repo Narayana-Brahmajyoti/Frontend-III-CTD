@@ -70,7 +70,7 @@ export function TableSeventhClass(){
 
     return (
 
-        <main className="setima-aula-component">
+        <main className="setima-aula-component-table">
 
             <div className="tittle-wrapper">
                 <h1>Produtos</h1>

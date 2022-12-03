@@ -2,7 +2,8 @@
 
     width: 100%;
     max-width: 1000px;
-    margin: 32px auto;
+    margin: 0 auto;
+    color: white;
 
     main {
 
@@ -29,7 +30,11 @@
         button {
             
             
-
+            color: black;
+            font-size: 20px;
+            padding: 5px;
+            margin: 3rem;
+          
             &:hover {
 
                 box-shadow: 0 0 20px rgb(77, 200, 89);

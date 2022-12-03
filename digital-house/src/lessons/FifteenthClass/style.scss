@@ -2,7 +2,7 @@
 
     width: 100%;
     max-width: 1000px;
-    margin: 32px auto;
+    margin: 0 auto;
 
     form {
 
@@ -11,6 +11,7 @@
         border-radius: 12px;
         display: flex;
         flex-direction: column;
+        color: white;
 
         h1 {
 

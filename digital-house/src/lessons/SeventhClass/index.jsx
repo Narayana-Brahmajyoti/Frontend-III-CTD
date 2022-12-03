@@ -22,7 +22,7 @@ export function SeventhClass() {
 
     return(
 
-        <main className={ `setima-aula-component-contador ${temaClaro ? 'lightTheme': ''}` }>
+        <main className={ `setima-aula-component-contador ${temaClaro ? 'lightTheme': 'darkTheme'}` }>
 
             <h1>Contador</h1>
 
