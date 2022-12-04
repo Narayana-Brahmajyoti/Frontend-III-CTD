@@ -14,12 +14,15 @@
     form {
 
         background-color: #303030;
+        color: white;
         padding: 42px;
         border-radius: 12px;
         display: flex;
         flex-direction: column;
         gap: 12px;
         transition: .2s;
+
+        
 
         &.form-error {
 
@@ -50,9 +53,11 @@
             flex-direction: column;
             gap: 4px;
 
+            
+
             label {
 
-                font-size: 14px;
+                font-size: 20px;
                 opacity: .8;
 
             }

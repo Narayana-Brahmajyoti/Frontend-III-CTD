@@ -8,6 +8,7 @@
     gap: 12px;
 
     font-size: 2rem;
+    
 
     .has-shown{
         animation: has-shown 2s ease-in-out 1 normal forwards;
@@ -18,48 +19,43 @@
 
     // Estilização para o Modo Dark
     &.dark {
+        
+        animation: gradient 10s ease infinite; 
+        background: linear-gradient(-45deg, #290923, #57134A, #8C1F78, #9F20BA, #6F1EB0, #271D99,#331963, #3A1A70, #1E0D3B);
+        background-size: 300%;
+    
+        content: "";
+        // pointer-events: none;
+        // width: 100%;
+        // background-attachment: fixed;
+        
+        // height: 100%;
 
-        background: linear-gradient(to top, #290923, #57134A, #8C1F78, #9F20BA, #6F1EB0, #271D99,#331963);
 
         .main-layout-component-header {
-            // .title {
-            //     font-size: 5rem;
             
-            // }
-            // background-color: #404040;
             color: white;
-            // .ul-aulas {
-            //     color: white;
-            // }
-            // section{
-            //     &:link{
-            //         color: white;
-            //     }
-            // }
+            
             
         }
 
         .main-layout-component-aside {
 
-            // background-color: #404040;
+            
             color: white;
 
             &.link{
                color: white; 
             }
-            // ul{
-            //     li {
-            //        color: white; 
-            //     }
-            // }
+            
         }
 
         .main-layout-component-main {
 
-            // background-color: #505050;
             color: white;
 
-            .setima-aula-component-contador, .thirteenth-class-component-contador{
+            .setima-aula-component-contador, 
+            .thirteenth-class-component-contador{
                 border: solid 1px white;
             }
 
@@ -70,11 +66,12 @@
     // Estilização para o Modo Light
     &.light {
 
-        background: linear-gradient(45deg, #FFCDD9, #B0D6E9);
-        
+        animation: gradient 10s ease infinite; 
+        background: linear-gradient(-45deg,#EC90DE, #FFCDD9, #B0D6E9, #35D2FA);
+        background-size: 300%;
+
         .main-layout-component-header {
             
-            // background-color: #8181810;
             color: black;
             border-color:  black;
 
@@ -82,20 +79,27 @@
 
         .main-layout-component-aside {
 
-            // background-color: #929292;
             color: black;
             border-color:  black;
         }
 
         .main-layout-component-main {
-            // color: #290923;
-            // background-color: #5c5c5c;
+        
             color: black;
             border-color:  black;
+
+            .instagram-time-line-component{
+                
+                .post{
+
+                    color: white;
+                }
+            }
 
             .setima-aula-component-contador, .thirteenth-class-component-contador{
                 border: solid 1px black;
             }
+
         }
 
     }
@@ -112,7 +116,7 @@
             font-size: 5rem;
         
         }
-        // background-color: #404040;
+        
         color: white;
         .ul-aulas {
             color: white;
@@ -165,17 +169,15 @@
         margin-top: 0;
         margin-left: 0;
 
-        
-
+    
         border-style: solid;
         border-width: 1px; 
         border-color:  whitesmoke;
 
     }
 
+    
 }
-
-
 
 @keyframes has-shown{
     from {
@@ -187,7 +189,19 @@
         opacity: 1;
         transform: none;
     }
+}
 
-    
+@keyframes gradient {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
 }
 
