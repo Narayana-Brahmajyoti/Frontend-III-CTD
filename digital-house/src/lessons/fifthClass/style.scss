@@ -1,0 +1,64 @@
+.fifth-class-component {
+
+    &.dark {
+        li {
+
+            border: solid 1px white;
+            background: rgba(40, 24, 109, 0.521);
+            border-radius: 12px;
+        }
+    }
+
+    &.light {
+        li {
+
+            border: solid 1px black;
+            background: rgba(255, 255, 255, 0.644);
+            border-radius: 12px;
+            
+        }
+    }
+
+    &.hight-contrast {
+
+        li {
+            border-radius: 12px;
+            border: solid 1px white;
+        }
+    }
+
+    .main-title {
+
+        font-size: 32px;
+        text-align: center;
+
+    }
+
+    .components-finded {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+
+        li {
+
+            width: 424px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            padding: 12px;
+            
+
+            img {
+
+                width: 400px;
+                border-radius: 12px;
+
+            }
+
+
+        }
+
+    }
+}

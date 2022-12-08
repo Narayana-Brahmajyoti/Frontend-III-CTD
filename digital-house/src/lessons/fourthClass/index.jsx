@@ -1,8 +1,11 @@
 import './style.scss'
 import testeImage from './../../assets/images/teste.jfif'
 import batataGif from './../../assets/images/batata.gif'
+import { useTheme } from '../../hooks/useTheme'
 
 export function FourthClass(){
+
+    const { theme } = useTheme()
 
     const componentsFinded = [    
     
@@ -30,7 +33,7 @@ export function FourthClass(){
     ]
 
     return(
-        <div className='fourth-class-component'>
+        <div className={`fourth-class-component ${theme}`}>
             <h1 className='main-title'>Componentes identificados</h1>
             <h2>Site - <a href={"https://www.starplus.com/en-br"} target={"_blank"} >Star+</a> </h2>
             <br/>

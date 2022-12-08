@@ -31,6 +31,11 @@ function App() {
       path: '',
       element: <MainLayout />,
       children: [
+        
+        {
+          path: '',
+          element: <Login />
+        },
         {
           path: 'segunda-aula',
           element: <SecondClass />
@@ -38,7 +43,8 @@ function App() {
         {
           path: 'terceira-aula',
           element: <ThirdClass />
-        },{
+        },
+        {
           path: 'quarta-aula',
           element: <FourthClass />
         },
@@ -82,20 +88,21 @@ function App() {
           path: 'to-do',
           element: <ToDo />
         },
-        {
-          path: 'login',
-          element: <Login />
-        },
+        // {
+        //   path: 'login',
+        //   element: <Login />
+        // },
         {
           path: 'configurations',
           element: <Configurations />
         },
+        {
+          path: 'dh-games',
+          element: < DHGames />
+        },
       ]
-    },
-    {
-      path: 'dh-games',
-      element: < DHGames />
     }
+    
   ])
   
 

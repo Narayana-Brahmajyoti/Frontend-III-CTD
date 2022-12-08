@@ -44,8 +44,10 @@
             
             color: white;
 
-            &.link{
-               color: white; 
+            a {
+
+                color: white;
+
             }
             
         }
@@ -81,6 +83,13 @@
 
             color: black;
             border-color:  black;
+
+            a {
+
+                color: black;
+
+            }
+ 
         }
 
         .main-layout-component-main {
@@ -102,6 +111,47 @@
 
         }
 
+    }
+
+    &.hight-contrast {
+
+        background-color: black;
+
+        .main-layout-component-header {
+            
+            color: white;
+            
+            
+        }
+
+        .main-layout-component-aside {
+
+            color: white;
+
+            a {
+
+                color: white;
+
+            }
+            
+        }
+
+        .main-layout-component-main {
+
+            color: white;
+
+            .setima-aula-component-contador, 
+            .thirteenth-class-component-contador{
+                border: solid 1px white;
+            }
+
+        }
+
+    }
+
+    &.big-text{
+
+        font-size: xx-large;
     }
 
     .main-layout-component-header {
@@ -154,6 +204,16 @@
 
             }
 
+            a:hover {
+                text-decoration-line: underline;
+                // font-style: oblique;
+            }
+
+            a:focus{
+                opacity: 1;
+                
+            }
+
         }
 
     }
@@ -169,7 +229,8 @@
         margin-top: 0;
         margin-left: 0;
 
-    
+        
+
         border-style: solid;
         border-width: 1px; 
         border-color:  whitesmoke;

@@ -12,12 +12,12 @@ export function MainLayout(){
     }
 
     // Importação do Tema utilização do Hook customizado "useTheme"
-    const { theme } = useTheme()
-
+    const { theme, text } = useTheme()
+    // const { text } = useText() ${text}
 
     return (
         // Alteração da Classe baseado no valor do Tema
-        <div className={`main-layout-component ${theme}`}>
+        <div className={`main-layout-component ${theme} ${text ? 'big-text' : ''}`}>
             <header className='main-layout-component-header'>
                 <h1 className='title has-shown'>Frontend III - React</h1>
             </header>
@@ -63,9 +63,9 @@ export function MainLayout(){
                         <li>
                             <Link to="challenges">Instagram TimeLine</Link>
                         </li>                        
-                        <li>
+                        {/* <li>
                             <Link to="login">Login</Link>
-                        </li>
+                        </li> */}
                     </ul>
                 </section>
                 <section>

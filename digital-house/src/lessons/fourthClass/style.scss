@@ -1,5 +1,32 @@
 .fourth-class-component{
 
+    &.dark {
+        li {
+
+            border: solid 1px white;
+            background: rgb(40, 24, 109);
+            border-radius: 12px;
+        }
+    }
+
+    &.light {
+        li {
+
+            border: solid 1px black;
+            background: white;
+            border-radius: 12px;
+            
+        }
+    }
+
+    &.hight-contrast {
+
+        li {
+            border-radius: 12px;
+            border: solid 1px white;
+        }
+    }
+
     .main-title {
 
         font-size: 32px;
@@ -20,10 +47,9 @@
             display: flex;
             flex-direction: column;
             gap: 6px;
-            background-color: rgb(74, 74, 161);;
+            // background-color: rgb(74, 74, 161);;
             padding: 12px;
-            border-radius: 12px;
-
+            
 
             img {
 
