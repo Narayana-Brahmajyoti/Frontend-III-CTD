@@ -1,22 +1,24 @@
+import { contents } from "../../assets/translate/contents"
+import { useLanguage } from "../../hooks/useLanguage"
 import { useTheme } from "../../hooks/useTheme"
 
 export function Configurations() {
 
     // Utilização do Hook useTheme
     const { theme, changeTheme, text , changeText } = useTheme()
-    // const { text , changeText} = useText()
+    const { currentLanguage, changeCurrentLanguage } = useLanguage()
 
     return (
 
-        <div>
-
-            <h1>Configurações</h1>
+        <div className='configurations-component'>
+            
+            <h1>{contents.configurationComponent.title[currentLanguage]}</h1>
 
             <form>
 
                 <section>
 
-                    <h1>Tema</h1>
+                    <h1>{contents.configurationComponent.sectionTitleTheme[currentLanguage]}</h1>
 
                     <div>
                         <input type="radio" name="theme" id="light" checked={theme === 'light'} onChange={() => changeTheme('light')} />
@@ -41,13 +43,12 @@ export function Configurations() {
 
                     <div>
                         <input type="checkbox"   onChange={() => changeText()}/>
-                        {/* <input type="checkbox" id="big-text" checked={text === 'big-text'} onChange={() => changeText('big-text')}/> */}
                         <label htmlFor="language">Letras grandes</label>
                     </div>
 
                 </section>
 
-                {/* <section>
+                <section>
 
                     <h1>Linguagem</h1>
 
@@ -58,13 +59,13 @@ export function Configurations() {
                             onChange={event => changeCurrentLanguage(event.target.value)}
                             value={currentLanguage}
                         >
-                            <option value="portuguese">Portugues</option>
+                            <option value="portuguese">Português</option>
                             <option value="english">English</option>
                             <option value="russian">Russo</option>
                         </select>
                     </div>
 
-                </section> */}
+                </section>
 
             </form>
 

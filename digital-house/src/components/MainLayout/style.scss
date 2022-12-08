@@ -7,8 +7,9 @@
     'aside  main';
     gap: 12px;
 
-    font-size: 2rem;
+    font-size: 2rem; 
     
+    min-width: 782px;
 
     .has-shown{
         animation: has-shown 2s ease-in-out 1 normal forwards;

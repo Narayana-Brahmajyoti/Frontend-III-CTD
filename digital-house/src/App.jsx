@@ -22,6 +22,7 @@ import { ToDo } from "./pages/ToDo";
 
 import { ThemeProvider } from "./hooks/useTheme";
 import { Configurations } from "./pages/Configurations";
+import { LanguageProvider } from "./hooks/useLanguage";
 
 function App() {
 
@@ -109,9 +110,9 @@ function App() {
   return (
     
     <ThemeProvider>    
-      {/* <LanguageProvider>   */}
+      <LanguageProvider>
         <RouterProvider router={appRouter} />
-      {/* </LanguageProvider>       */}
+      </LanguageProvider>      
     </ThemeProvider>
 
   )
