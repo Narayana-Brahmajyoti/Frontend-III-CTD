@@ -29,7 +29,7 @@ export function Card (props) {
   }
 
   return (
-    <div className={ tema(props.cardCor.cor) } style={{backgroundColor:props.cardCor.cor }}>
+    <div className={ ` ${tema(props.cardCor.cor)} cardU`} style={{backgroundColor:props.cardCor.cor }}>
       <span className="section-card-horizontal-span" >{props.cardCor.nome}</span>
       <h1 className="section-card-horizontal-title">{props.cardCor.cor}</h1>
 

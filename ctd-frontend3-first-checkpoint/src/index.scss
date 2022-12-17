@@ -191,8 +191,7 @@ input{
 }
 
 .section-card{
-  margin-top: 4rem;
-    
+  margin-top: 4rem; 
 } 
 
 .cards{
@@ -200,6 +199,13 @@ input{
   flex-wrap: wrap;
   gap: 2.4rem;
   // min-width: 45rem;
+
+  // grid-template-columns: repeat(4, 1fr);
+  // grid-area: 
+  // "cardU cardU cardU cardU";
+  // gap: 1.125rem;
+  // text-align: center;
+  // margin: 0 auto; 
 }
 
 .section-card-horizontal-title{
@@ -245,4 +251,28 @@ input{
 }
 
 
+@media(min-width: 786px) and (max-width: 1065px){
+  .cards{
+    // grid-template-columns: repeat(3, 1fr);
+    
+  }
+  
+}
 
+@media(min-width: 574px) and (max-width: 785px){
+  .cards{
+    // grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(max-width: 573px){
+  .cards{
+    // grid-template-columns: 1fr;
+    span{
+      font-size: 10px;
+    }
+    h1{
+      font-size: 20px;
+    }
+  }
+}
