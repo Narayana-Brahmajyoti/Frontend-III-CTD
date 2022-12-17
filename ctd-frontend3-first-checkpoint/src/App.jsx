@@ -2,6 +2,7 @@
 // Aqui você irá escrever as suas funções de Validação, para verificar se o Formulário foi preenchido corretamente
 //  import './style.scss'
 
+import { GetColorName } from "hex-color-to-color-name"
 import { useState } from "react"
 import { Card } from "./cardComponent/Card"
 
@@ -19,7 +20,7 @@ function adicionarCor(event){
   
   const novaCorCadastrada = {
 
-    nome: nomeCor,
+    nome: GetColorName(corHexadecimal),
     cor: corHexadecimal
   }
 
@@ -57,12 +58,22 @@ function adicionarCor(event){
               <section className="section-form-inputs">
                 <div className="section-form-nome-cor">
                   <label className="name-form-label" htmlFor="nomeCor">Nome: </label>
-                  <input className="name-form-input-cor" id='nomeCor' type="text" placeholder="Digite o nome da cor" value={nomeCor} onChange={event => setNomeCor(event.target.value.trim())}/>
+                  <input className="name-form-input-cor" id='nomeCor' type="text" placeholder="Digite o nome da cor" value={nomeCor} 
+                    onChange={event => setNomeCor(event.target.value.trim())}/>
                 </div>
                 <div className="section-form-nome-hexadecimal">
                   <label className="name-form-label" htmlFor="corHexadecimal">Cor: </label>
-                  <input className="name-form-input" id='corHexadecimal' type="text" placeholder="Insira sua cor no formato Hexadecimal" value={corHexadecimal} onChange={event => setCorHexadecimal(event.target.value)}/>
-                  <input className="section-form-input-type-color" id='corHexadecimal' type="color" placeholder="Insira sua cor no formato Hexadecimal" value={corHexadecimal} onChange={event => setCorHexadecimal(event.target.value)}/>
+                  <input className="name-form-input" id='corHexadecimal' type="text" placeholder="Insira sua cor no formato Hexadecimal" value={corHexadecimal} 
+                    onChange={event => {
+                      setCorHexadecimal(event.target.value)
+                      setNomeCor(GetColorName(event.target.value))
+                  }}/>
+                  <input className="section-form-input-type-color" id='corHexadecimal' type="color" placeholder="Insira sua cor no formato Hexadecimal" 
+                    value={corHexadecimal} 
+                    onChange={event => {
+                      setCorHexadecimal(event.target.value)
+                      setNomeCor(GetColorName(event.target.value))
+                  }}/>
                 </div>
               </section>
               <button className="button-submit" type="submit">ADICIONAR</button>
